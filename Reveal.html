@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="./Images/userAsset/FavIcon.png"
+  />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #02111b;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .text {
+        position: absolute;
+        font-size: 100px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        opacity: 0;
+        animation: fadeIn 2s forwards, fadeOut 2s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <video id="video" src="./video/Reveal.mp4" autoplay muted></video>
+    <div class="text" style="animation-delay: 1s">Welcome to,</div>
+    <div class="text" style="animation-delay: 4s">Sachin Kumar&apos;s</div>
+    <div class="text" style="animation-delay: 7s">Portfolio</div>
+
+    <script>
+      const video = document.getElementById("video");
+      video.addEventListener("ended", () => {
+        document.body.style.transition = "opacity 1s ease-in-out";
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 300); // Redirect after 1 second (matching the transition duration)
+      });
+    </script>
+  </body>
+</html>
