@@ -241,7 +241,7 @@ hr.style-two {
   transform: scaleX(1);
 }
 .btn-pink:hover {
-  border: solid 3px var(--bgOrange);
+  /* border: solid 3px var(--bgOrange); */
   color: black;
 }
 
@@ -560,6 +560,7 @@ hr.style-two {
   position: relative;
   gap: 2rem;
   justify-content: center;
+  padding-right: 2rem;
 }
 
 .skill-fade-text {
