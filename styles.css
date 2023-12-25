@@ -453,7 +453,7 @@ hr.style-two {
 }
 
 #project1 {
-  background-image: url(./images/projects/Projectposter_2.svg);
+  background-image: url(./Images/projects/Projectposter_2.svg);
   /* background-repeat: no-repeat; */
   background-size: auto;
   background-repeat: repeat;
@@ -463,20 +463,20 @@ hr.style-two {
 
 #project2 {
   margin-left: 120px;
-  background-image: url(./images/projects/Project_poster_1.svg);
+  background-image: url(./Images/projects/Project_poster_1.svg);
   /* background-size: auto; */
   background-position: 0 30%;
   border-radius: 20px;
 }
 #project3 {
-  background-image: url(./images/projects/Project_poster-1.svg);
+  background-image: url(./Images/projects/Project_poster-1.svg);
   /* background-size: auto; */
   background-position: 0 30%;
   border-radius: 20px;
 }
 #project4 {
   margin-left: 120px;
-  background-image: url(./images/projects/Project4.png);
+  background-image: url(./Images/projects/Project4.png);
   /* background-size: auto; */
   background-position: 0 30%;
   border-radius: 20px;
